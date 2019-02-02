@@ -1,0 +1,23 @@
+﻿@using MvcWebUI.Models;
+
+@model IEnumerable<ProductModel>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<div class="jumbotron">
+
+    <h1 class="display-3">Merhaba!</h1>
+    <p class="lead"></p>
+    <hr class="my-4">
+    <p>Burası farklı kategorilerde çiçekler satın alıp, sevdiklerinizi mutlu edebileceğiniz bir yer!</p>
+   
+
+</div>
+
+
+@Html.Partial("_ProductList", Model)
